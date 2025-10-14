@@ -128,7 +128,7 @@ const ProjectCarousel: React.FC = () => {
             const zIndex = useTransform(z, (zPos) => Math.round(zPos));
 
             const brightnessValue = useTransform(z, (zPos) => {
-              const minBrightness = 0.3;
+              const minBrightness = 0.6;
               const maxBrightness = 1.0;
               return (
                 minBrightness +
