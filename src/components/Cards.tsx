@@ -85,7 +85,7 @@ const CardCarousel: React.FC = () => {
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
           dragElastic={0.25}
-          onDrag={(e, info) =>
+          onDrag={(_, info) =>
             rotation.set(rotation.get() + info.delta.x * dragFactor)
           }
           onDragEnd={handleDragEnd}
