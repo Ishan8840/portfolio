@@ -46,7 +46,7 @@ const projects: Project[] = [
     description: "A Tinder‑style project discovery app for hackers and makers. Swipe right to show interest, left to pass.",
     tech: ["React", "TypeScript", "Supabase"],
     github: "https://github.com/Ishan8840/HackMate",
-    video: "/imgs/videoplayback.mp4",
+    video: "/imgs/hackmate.mp4",
     bg: "#f8f9fa",
   },
   {
@@ -221,7 +221,7 @@ const ProjectCarousel: React.FC = () => {
                           loop
                           muted
                           playsInline
-                          className="w-full rounded-lg mb-4 object-contain"
+                          className="w-full border rounded-lg mb-4 object-contain"
                         />
                       )}
                       {project.img && (
