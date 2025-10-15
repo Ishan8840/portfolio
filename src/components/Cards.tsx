@@ -291,7 +291,7 @@ const ProjectCarousel: React.FC = () => {
                         {project.tech.map((tech) => (
                           <span
                             key={tech}
-                            className="bg-white/30 backdrop-blur-sm text-gray-800 text-xs sm:text-sm font-medium px-2 py-1 rounded-full border border-black/20 hover:bg-white/50 hover:scale-105 transition-all duration-200"
+                            className="bg-white/30 backdrop-blur-sm text-gray-800 text-xs sm:text-sm font-medium px-2 py-1 rounded-full border border-black/20 hover:bg-white/50 hover:scale-105 hover:border-black/50 transition-all duration-200"
                           >
                             {tech}
                           </span>
