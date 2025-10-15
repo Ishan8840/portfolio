@@ -8,7 +8,7 @@ export default function AboutCard() {
       iconSrc: "/imgs/linkedin.svg",
       label: "LinkedIn",
     },
-    { href: "https://x.com/", iconSrc: "/imgs/x.svg", label: "Twitter" },
+    { href: "https://x.com/IshanShahh", iconSrc: "/imgs/x.svg", label: "Twitter" },
     {
       href: "https://github.com/Ishan8840",
       iconSrc: "/imgs/github.svg",

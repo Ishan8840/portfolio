@@ -23,30 +23,29 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Study Buddy",
-    description: "AI-powered study assistant that organizes your notes.",
-    tech: ["React", "TypeScript", "OpenAI API"],
+    description: "Gamified AI study habit tracker using MediaPipe for real-time detection to monitor focus, distractions, and face-touching",
+    tech: ["React", "JavaScript", "FastAPI", "media-pipe", "redis"],
     github: "https://github.com/Ishan8840/StudyBuddy",
     demo: "https://www.studybene.fit/",
-    video: "/imgs/videoplayback.mp4",
+    video: "/imgs/studybuddy.mp4",
     bg: "#f8f9fa",
   },
   {
     id: 2,
-    title: "Study Buddy",
-    description: "AI-powered study assistant that organizes your notes.",
-    tech: ["React", "TypeScript", "OpenAI"],
-    github: "https://github.com/Ishan8840/StudyBuddy",
-    demo: "https://www.studybene.fit/",
-    video: "/imgs/videoplayback.mp4",
+    title: "Flixit",
+    description: "A polished frontend for a movie rental experience. Navigate movies, view info, and enjoy intuitive design elements.",
+    tech: ["React", "Firebase", "JavaScript"],
+    github: "https://github.com/Ishan8840/movie-rental-app",
+    demo: "https://react-tmdb-api-movie-website.vercel.app/",
+    video: "/imgs/movierental.mp4",
     bg: "#f8f9fa",
   },
   {
     id: 3,
-    title: "Study Buddy",
-    description: "AI-powered study assistant that organizes your notes.",
-    tech: ["React", "TypeScript", "OpenAI API"],
-    github: "https://github.com/Ishan8840/StudyBuddy",
-    demo: "https://www.studybene.fit/",
+    title: "Hack Mate",
+    description: "A Tinder‑style project discovery app for hackers and makers. Swipe right to show interest, left to pass.",
+    tech: ["React", "TypeScript", "Supabase"],
+    github: "https://github.com/Ishan8840/HackMate",
     video: "/imgs/videoplayback.mp4",
     bg: "#f8f9fa",
   },
@@ -222,7 +221,7 @@ const ProjectCarousel: React.FC = () => {
                           loop
                           muted
                           playsInline
-                          className="w-full h-30 sm:h-30 md:h-35 lg:h-45 rounded-lg mb-4 object-cover"
+                          className="w-full rounded-lg mb-4 object-contain"
                         />
                       )}
                       {project.img && (
@@ -284,10 +283,10 @@ const ProjectCarousel: React.FC = () => {
                           )}{" "}
                         </div>{" "}
                       </div>
-                      <p className="text-black/90 text-xs sm:text-sm md:text-base">
+                      <p className="text-black/90 text-xs sm:text-sm md:text-base ml-1 mt-1">
                         {project.description}
                       </p>
-                      <div className="flex flex-wrap gap-2 justify-center">
+                      <div className="flex flex-wrap gap-2 justify-center mt-3">
                         {project.tech.map((tech) => (
                           <span
                             key={tech}
