@@ -1,5 +1,6 @@
 import AboutCard from "./components/About";
 import ProjectCarousel from "./components/Cards";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -7,6 +8,8 @@ function App() {
     >
       <AboutCard />
       <ProjectCarousel />
+      <Experience />
+      <div className="min-h-50"></div>
     </div>
   );
 }

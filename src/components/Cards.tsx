@@ -100,17 +100,17 @@ const ProjectCarousel: React.FC = () => {
 
   return (
     <motion.header
-      className="flex flex-col items-start w-full px-4 sm:px-6 md:px-8 mb-16"
+      className="flex flex-col items-start w-full px-4 sm:px-6 md:px-8 mb-10"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
     >
       <div className="w-full max-w-xl mx-auto flex items-center justify-between mb-12 sm:mb-8">
         <motion.h1
-          className="text-left text-2xl sm:text-3xl md:text-4xl"
+          className="text-left text-xl sm:text-2xl md:text-3xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
         >
-          What I've Built.
+          What I've built.
         </motion.h1>
 
         <a
