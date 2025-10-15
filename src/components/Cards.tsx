@@ -104,7 +104,7 @@ const ProjectCarousel: React.FC = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
     >
-      <div className="w-full max-w-xl mx-auto flex items-center justify-between mb-12 sm:mb-5">
+      <div className="w-full max-w-xl mx-auto flex items-center justify-between mb-12 sm:mb-8">
         <motion.h1
           className="text-left text-2xl sm:text-3xl md:text-4xl"
           initial={{ opacity: 0, y: 20 }}
