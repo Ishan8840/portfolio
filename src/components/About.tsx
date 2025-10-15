@@ -100,7 +100,7 @@ export default function AboutCard() {
 
       {/* Greeting */}
       <motion.h1
-        className="font-handwriting text-5xl mb-8 text-center cursor-pointer"
+        className="font-sans text-5xl mb-8 text-center cursor-pointer"
         initial={{ opacity: 0, y: 10 }}
         animate={{
           opacity: 1,
@@ -124,12 +124,12 @@ export default function AboutCard() {
       >
         <div className="bg-card shadow-md rounded-lg p-6">
           <p className="text-lg sm:text-xl text-gray-800 leading-relaxed mb-6">
-            I study <span className="font-medium text-gray-900">CS @</span>{" "}
-            <span className="inline-flex items-center gap-1.5 align-middle">
-              <span className="font-medium">{school[0].name}</span>
+            I study <span className="font-semibold text-gray-900">CS @</span>{" "}
+            <span className="inline-flex items-centergap-1.5 align-middle">
+              <span className="font-semibold text-gray-900">{school[0].name}</span>
             </span>{", "}
             where I explore my passion for{" "}
-            <span className="font-medium text-gray-900">
+            <span className="text-gray-900 font-semibold">
               machine learning, agentic systems, and robotics
             </span>
             .
