@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
 
 type Job = {
   id: number;
@@ -82,7 +82,7 @@ const Experience: React.FC = () => {
           {jobs.map((job) => (
             <div
               key={job.id}
-              className="flex flex-col sm:flex-row gap-2 p-2 bg-white hover:scale-101 transition-all duration-200 ease-in-out"
+              className="flex flex-col sm:flex-row gap-2 p-2 hover:scale-101 transition-all duration-200 ease-in-out"
             >
               <img
                 src={job.img}
