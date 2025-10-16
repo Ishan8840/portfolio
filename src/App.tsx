@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import AboutCard from "./components/About";
 import ProjectCarousel from "./components/Cards";
 import Experience from "./components/Experience";
