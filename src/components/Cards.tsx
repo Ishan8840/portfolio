@@ -101,7 +101,7 @@ const ProjectCarousel: React.FC = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0, transition: { duration: 0.6 } }}
     >
-      <div className="w-full max-w-xl mx-auto flex items-center justify-between mb-12 sm:mb-8">
+      <div className="w-full max-w-xl mx-auto flex items-center justify-between mb-12 sm:mb-9">
         <motion.h1
           className="text-left text-xl sm:text-2xl md:text-3xl"
           initial={{ opacity: 0, y: 20 }}
@@ -111,8 +111,7 @@ const ProjectCarousel: React.FC = () => {
         </motion.h1>
 
         <a
-          href="https://github.com/Ishan8840"
-          target="_blank"
+          href="/projects"
           className="text-sm sm:text-base hover:text-blue-600 transition-colors"
         >
           See all →
@@ -323,7 +322,7 @@ const ProjectCarousel: React.FC = () => {
           </motion.div>
         </div>
       </div>
-      <span className="block w-full text-center text-sm text-gray-400 font-normal tracking-wide mt-3">
+      <span className="block w-full text-center text-sm text-gray-400 font-normal tracking-wide mt-5">
         &lt;- swipe -&gt;
       </span>
     </motion.header>

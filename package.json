@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "overrides": {
-  "three": "0.180.0"
+    "three": "0.180.0"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.6",
@@ -19,7 +19,8 @@
     "canvas-confetti": "^1.9.3",
     "framer-motion": "^12.23.24",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

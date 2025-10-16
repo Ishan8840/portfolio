@@ -100,7 +100,7 @@ export default function AboutCard() {
 
       {/* Greeting */}
       <motion.h1
-        className="font-sans text-5xl mb-8 text-center cursor-pointer"
+        className="font-sans text-5xl mb-8 text-center cursor-pointer mt-2"
         initial={{ opacity: 0, y: 10 }}
         animate={{
           opacity: 1,
