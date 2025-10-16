@@ -138,15 +138,15 @@ const ProjectCarousel: React.FC = () => {
                 rotation,
                 (r) => ((r + baseAngle) * Math.PI) / 180
               );
-              const radius = 140;
+              const radius = 150;
 
               const x = useTransform(angle, (a) => Math.sin(a) * radius);
               const z = useTransform(angle, (a) => Math.cos(a) * radius);
-              const scale = useTransform(angle, (a) => 0.7 + 0.3 * Math.cos(a));
+              const scale = useTransform(angle, (a) => 0.8 + 0.2 * Math.cos(a));
               const zIndex = useTransform(z, (zPos) => Math.round(zPos));
 
               const brightnessValue = useTransform(z, (zPos) => {
-                const minBrightness = 0.6;
+                const minBrightness = 0.8;
                 const maxBrightness = 1.0;
                 return (
                   minBrightness +
@@ -160,7 +160,7 @@ const ProjectCarousel: React.FC = () => {
               const videoRef = useRef<HTMLVideoElement>(null);
 
               const rotateY = useTransform(x, (xPos) => {
-                const maxTilt = 30;
+                const maxTilt = 25;
                 let tilt = (xPos / radius) * maxTilt;
                 if (xPos > 0) tilt += Math.min(xPos / radius, 1) * 180;
                 return tilt;
