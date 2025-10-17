@@ -6,6 +6,7 @@ import {
   animate,
   useMotionTemplate,
 } from "framer-motion";
+import { Link } from "react-router-dom";
 
 type Project = {
   id: number;
@@ -23,7 +24,8 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Study Buddy",
-    description: "Gamified AI study habit tracker using MediaPipe for real-time detection to monitor focus, distractions, and face-touching",
+    description:
+      "Gamified AI study habit tracker using MediaPipe for real-time detection to monitor focus, distractions, and face-touching",
     tech: ["React", "JavaScript", "FastAPI", "media-pipe", "redis", "MongoDB"],
     github: "https://github.com/Ishan8840/StudyBuddy",
     demo: "https://www.studybene.fit/",
@@ -33,7 +35,8 @@ const projects: Project[] = [
   {
     id: 2,
     title: "Flixit",
-    description: "A polished frontend for a movie rental experience. Navigate movies, view info, and enjoy intuitive design elements.",
+    description:
+      "A polished frontend for a movie rental experience. Navigate movies, view info, and enjoy intuitive design elements.",
     tech: ["React", "Firebase", "JavaScript"],
     github: "https://github.com/Ishan8840/movie-rental-app",
     demo: "https://react-tmdb-api-movie-website.vercel.app/",
@@ -43,7 +46,8 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Hack Mate",
-    description: "A Tinder‑style project discovery app for hackers and makers. Swipe right to show interest, left to pass.",
+    description:
+      "A Tinder‑style project discovery app for hackers and makers. Swipe right to show interest, left to pass.",
     tech: ["React", "TypeScript", "Supabase"],
     github: "https://github.com/Ishan8840/HackMate",
     video: "/imgs/hackmate.mp4",
@@ -61,7 +65,8 @@ const projects: Project[] = [
   {
     id: 5,
     title: "LearnAI",
-    description: "Chrome extension that uses Google’s Gemini API to help users navigate websites with natural language prompts",
+    description:
+      "Chrome extension that uses Google’s Gemini API to help users navigate websites with natural language prompts",
     tech: ["JavaScript", "Gemini", "Extensions"],
     github: "https://github.com/Ishan8840/learn-ai",
     video: "/imgs/learnai.mp4",
@@ -70,7 +75,8 @@ const projects: Project[] = [
   {
     id: 6,
     title: "OperAid",
-    description: "Voice controlled platform that eliminates the need for manual record searching.",
+    description:
+      "Voice controlled platform that eliminates the need for manual record searching.",
     tech: ["Next.js", "FastAPI", "OpenAI", "ElevenLabs", "Supabase"],
     github: "https://github.com/Ishan8840/OperAId",
     demo: "https://operaid.framer.website/",
@@ -110,12 +116,12 @@ const ProjectCarousel: React.FC = () => {
           What I've built.
         </motion.h1>
 
-        <a
-          href="/projects"
+        <Link
+          to="/projects"
           className="text-sm sm:text-base hover:text-blue-600 transition-colors"
         >
           See all →
-        </a>
+        </Link>
       </div>
 
       <div className="w-full flex justify-center">
