@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function AboutCard() {
   const socialLinks = [
     {
-      href: "https://www.linkedin.com/in/ishan-shah-857975220/",
+      href: "https://www.linkedin.com/in/ishahh",
       iconSrc: "/imgs/linkedin.svg",
       label: "LinkedIn",
     },
